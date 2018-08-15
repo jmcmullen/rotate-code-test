@@ -1,0 +1,64 @@
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  color: $color-secondary;
+  font-family: $font-sans;
+  font-weight: 100;
+}
+
+h3 {
+  color: $color-dark;
+  font-family: $font-serif;
+  font-size: 0.9rem;
+}
+
+h4 {
+  color: $color-dark;
+  font-family: $font-serif;
+  font-size: 0.8rem;
+}
+
+a {
+  color: $color-light;
+  font-family: $font-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1 px solid $color-light;
+  transition: 0.3s all ease;
+
+  &:hover {
+    color: $color-dark;
+    border-bottom: 1px solid $color-dark;
+  }
+}
+
+button {
+  margin: 5px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  color: $color-light;
+  background: transparent;
+  text-transform: uppercase;
+  transition: 0.3s all ease-in-out;
+  font-family: $font-sans;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  outline: 0; // RIP Accessibility.
+
+  &:hover {
+    opacity: 1;
+    color: $color-dark;
+  }
+}
+
+p {
+  font-family: $font-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: $color-light;
+}
